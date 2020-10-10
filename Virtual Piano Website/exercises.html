@@ -1,0 +1,238 @@
+<DOCTYPE! html>
+    <html>
+    <title>PlayPiano</title>
+    <header>
+        <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery-3.4.1.js"></script>
+        <script src="jquery.js"></script>
+        <script src="jquery-ui.js"></script>
+
+            <div class="topnav">
+                <div class = "logo">
+                <img src="Icon.png" alt="Piano icon">
+                
+                </div>
+                <div style = "position:absolute; left:50px; top:0px;">
+                <h1>PlayPiano</h1>
+                </div>
+                <div style = "position:absolute; left:250px; top:17px;">
+                <a href="piano.html">Home</a>
+                <a href="tutorial.html">Tutorials</a>
+                <a href="exercises.html">Exercises</a>
+                </div>
+            </div>
+           
+
+    </header>
+
+    <body>
+        <br>
+        <br>
+        <div style="height:1100;" class="container">
+         <section id ="main">
+             <h1>Exercises</h1>
+             <br>
+             <p>Use the image below as reference for identifying the note names.  Then select the letter that corresponds with each note.  You can press the button to hide/show the reference image</p>
+             <br>
+             <br>
+             <button class = "button" id="hide" style = "position:absolute; left:140px;">Hide/Show Image</button>
+             <br>
+             <br>
+             <br>
+             <br>
+             <img id = "SheetMusic" src="Images/sheetmusic.png" alt="SheetMusic" >
+            <canvas id="myCanvas" width="800" height="200"></canvas>
+        <label for="number">Select a letter</label>
+        <select id = "questionOne" style = "position:absolute; left:240px;">
+          <option value="lowE">E (low)</option>
+          <option value="lowF">F (low)</option>
+          <option value="G">G</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="highE">E (high)</option>
+          <option value="highF">F (high)</option>
+        </select>
+        <select id = "questionTwo" style = "position:absolute; left:340px;">
+          <option value="lowE">E (low)</option>
+          <option value="lowF">F (low)</option>
+          <option value="G">G</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E (high)</option>
+          <option value="highF">F (high)</option>
+        </select>
+        <select id = "questionThree" style = "position:absolute; left:440px;">
+          <option value="lowE">E (low)</option>
+          <option value="lowF">F (low)</option>
+          <option value="G">G</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="highE">E (high)</option>
+          <option value="highF">F (high)</option>
+        </select>
+        <select id = "questionFour" style = "position:absolute; left:540px;">
+          <option value="lowE">E (low)</option>
+          <option value="lowF">F (low)</option>
+          <option value="G">G</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="highE">E (high)</option>
+          <option value="highF">F (high)</option>
+        </select>
+        <select id = "questionFive" style = "position:absolute; left:640px;">
+          <option value="lowE">E (low)</option>
+          <option value="lowF">F (low)</option>
+          <option value="G">G</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="highE">E (high)</option>
+          <option value="highF">F (high)</option>
+        </select>
+        <select id = "questionSix" style = "position:absolute; left:740px;">
+          <option value="lowE">E (low)</option>
+          <option value="lowF">F (low)</option>
+          <option value="G">G</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="highE">E (high)</option>
+          <option value="highF">F (high)</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <button class = "button"; id="Submit"; style = "position:absolute; left:440px;" onclick = "checkAnswer()">Submit</button>
+        <br>
+        <br>
+        <br>
+        <p id="q1"></p>
+        <p id="q2"></p>
+        <p id="q3"></p>
+        <p id="q4"></p>
+        <p id="q4"></p>
+        <p id="q5"></p>
+        <p id="q6"></p>
+        </section>
+        <aside id=sidebar>
+                    <h1>Contact us</h1>
+                    <div class="sidebarimages">
+                    <p>Name</p>
+                    <input type="text" name="fname" size="35">
+                    <p>Email</p>
+                    <input type="text" name="fname" size="35">
+                    <p>Subject</p>
+                    <input type="text" name="fname" size="35">
+                    <p>Message</p>
+                    <textarea style="width:190px; height:100px;"></textarea>
+                    <h2 id="exercises-god-header">Rate this website</h2>
+                    <br>
+                    <div id="exercises-font-slider"></div>
+                    <p class="center" id="exercises-font">0</p>
+                    </div>
+                    <br> 
+                    <button class="button" onclick = "showMessage()">Submit</button>
+                    <p id="sidebarMessage"></p>
+                </aside>
+        
+        </div>
+        <footer id="main-footer">
+            <h3>Copyright &copy PlayPiano</h3>
+        </footer>
+<!--        <script src="jquery.js"></script>-->
+        <script src="exercises.js"></script>
+        <div>
+        <audio id="middleCAudio" controls style="display:none">
+            <source src="Piano mp3 files/middle_c.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="middleDAudio" controls style="display:none">
+            <source src="Piano mp3 files/middle_d.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="middleEAudio" controls style="display:none">
+            <source src="Piano%20mp3%20files/middle_e.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="middleFAudio" controls style="display:none">
+            <source src="Piano%20mp3%20files/middle_f.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="middleGAudio" controls style="display:none">
+            <source src="Piano%20mp3%20files/middle_g.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="middleAAudio" controls style="display:none">
+            <source src="Piano%20mp3%20files/middle_a.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="middleBAudio" controls style="display:none">
+            <source src="Piano%20mp3%20files/middle_b.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="highCAudio" controls style="display:none">
+            <source src="Piano%20mp3%20files/high_c.mp3" type="audio/mpeg">
+        </audio>
+         <audio id="highDAudio" controls style="display:none">
+            <source src="Piano%20mp3%20files/high_d.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="highEAudio" controls style="display:none">
+            <source src="Piano%20mp3%20files/high_e.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="highFAudio" controls style="display:none">
+            <source src="Piano%20mp3%20files/high_f.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="highGAudio" controls style="display:none">
+            <source src="Piano%20mp3%20files/high_g.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="highAAudio" controls style="display:none">
+            <source src="Piano%20mp3%20files/high_a.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="highBAudio" controls style="display:none">
+            <source src="Piano%20mp3%20files/high_b.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="middleCSharpAudio" controls style="display:none">
+            <source src="Piano mp3 files/mid_c_sharp.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="middleDSharpAudio" controls style="display:none">
+            <source src="Piano%20mp3%20files/mid_d_sharp.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="middleFSharpAudio" controls style="display:none">
+            <source src="Piano mp3 files/mid_f_sharp.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="middleGSharpAudio" controls style="display:none">
+            <source src="Piano mp3 files/mid_g_sharp.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="middleASharpAudio" controls style="display:none">
+            <source src="Piano mp3 files/mid_a_sharp.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="highCSharpAudio" controls style="display:none">
+            <source src="Piano mp3 files/high_c_sharp.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="highDSharpAudio" controls style="display:none">
+            <source src="Piano mp3 files/high_d_sharp.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="highFSharpAudio" controls style="display:none">
+            <source src="Piano mp3 files/high_f_sharp.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="highGSharpAudio" controls style="display:none">
+            <source src="Piano mp3 files/high_g_sharp.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="highASharpAudio" controls style="display:none">
+            <source src="Piano mp3 files/high_a_sharp.mp3" type="audio/mpeg">
+        </audio>
+            
+        </div>
+
+    </body>
+
+    </html>
+

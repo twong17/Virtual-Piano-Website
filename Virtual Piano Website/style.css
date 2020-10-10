@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+body {
+    height: 1000px;
+    
+}
+*/
+body{
+    background-color: #E8E8E8;
+}
+
+body {
+ font-family: 'Chivo', sans-serif;
+ font-weight: 300;
+}
+
+a {
+ font-family: 'Chivo', sans-serif;
+ font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Playfair Display', serif;
+ font-weight: 700;
+ font-style: italic;
+}
+/*
+header {
+
+    text-align: center;
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 70% 70% / 10%;
+}
+*/
+
+.logo img {
+    
+    height: 80px;
+    width: 80px;
+    float: left;
+}
+
+.logo{
+    float:left;
+    overflow:auto;
+}
+
+
+#font-slider {
+    width: 200px;
+/*    margin: 0px auto;*/
+    background-color: white;
+}
+
+#tutorial-font-slider {
+    width: 200px;
+/*    margin: 0px auto;*/
+    background-color: white;
+}
+
+#exercises-font-slider {
+    width: 200px;
+/*    margin: 0px auto;*/
+    background-color: white;
+}
+
+
+#main button {
+  background-color: #00CED1; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+#hide{
+  background-color: #00CED1; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 12px;
+}
+
+#sidebar h1
+{
+    text-align: center;
+}
+
+#SheetMusic {
+    padding-left:4em
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+    
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 39.8px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.topnav h1 {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 39.8px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+#main {
+    float: left;
+    width: 65%;
+    padding:  30px;
+    box-sizing: border-box;
+    background-color: white;
+    margin-left: 50px;
+
+}
+
+#main img
+{
+    width: 50%;
+    height: auto;
+}
+.main{
+    background-color: white;
+}
+
+
+canvas
+{
+    padding-top:15px;
+    background-color: white;
+    display:block;
+/*    text-align:center;*/
+    border: 0;
+}
+
+
+
+
+
+
+#main-footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-family: Helvetica, sans-serif;
+    
+
+}
+
+#main-footer h3 {
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+#sidebar {
+    font-size: 15px;
+    float: right;
+    width: 25%;
+    background: #333;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#sidebar-posters {
+    float: right;
+    width: 30%;
+}
+
+#sidebar p {
+    font-size: 15px;
+}
+
+#sidebar h4 {
+    font-size: 20px;
+}
+
+
+
+.main {
+    max-width: 100%;
+/*    a*/
+}
+
+
+
+
+
+p {
+    font-size: 20px;
+}
+
+ul {
+    padding: 25;
+    list-size: none;
+}
+
+li {
+    text-align: left;
+}
+
+tr {
+    text-align: left;
+}
+
+table {
+    color: white;
+}
+
+
+
+
+
